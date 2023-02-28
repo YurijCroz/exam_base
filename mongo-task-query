@@ -1,0 +1,2 @@
+use shm-chat-dev
+db.messages.aggregate([{$match:{ body: /(паровоз)/gmi }},{$count: "количество записей содержат слово 'паровоз'" },])
